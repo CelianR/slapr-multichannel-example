@@ -20,6 +20,7 @@ jobs:
       - uses: DataDog/slapr@celian/codeowners
         env:
           SLAPR_MULTICHANNEL: "true"
+          SLAPR_MULTICHANNEL_ORG: "DataDog"
           SLACK_API_TOKEN: "${{ secrets.SLACK_API_TOKEN }}"
           SLAPR_BOT_USER_ID: "${{ secrets.SLAPR_BOT_USER_ID }}"
           SLAPR_EMOJI_REVIEW_STARTED: "review_started"
