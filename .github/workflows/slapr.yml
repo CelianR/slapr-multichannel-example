@@ -15,7 +15,7 @@ jobs:
     steps:
       - name: Fetch team mapping file
         run: |
-          echo '{"agent-devx-infra": "C06QEJ59XQF", "agent-shared-components": "C07SHSHS3E3"}' > "$SLAPR_MULTICHANNEL_TEAM_MAPPING"
+          echo '{"agent-devx-infra": "C06QEJ59XQF", "agent-devx-loops": "C07SHSHS3E3"}' > "$SLAPR_MULTICHANNEL_TEAM_MAPPING"
           echo 'Channels are #celian-tests and #yet-another-celian-tests'
       - uses: DataDog/slapr@celian/codeowners
         env:
